@@ -1,0 +1,43 @@
+$azulincoisa:rgb(0, 158, 226);
+$amarilloinocisa:rgb(255,205,0);
+$naranjainocisa:rgb(248,175,0);
+$verdeinocisa:rgb(165,173,30);
+$verdefinocisa:rgb(131,140,40);
+$grisinocisa: rgb(198,198,198);
+
+
+
+ .slider
+{
+
+height: 100vh;
+background-size: cover;
+background-position: center;
+overflow: hidden;
+}
+
+.imagenlogo
+{
+
+width: 300px;
+height:100px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.imagentelefono
+{
+width: 150px;
+height: 50px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+ 
+.azulinocisa
+{
+background: $azulincoisa;
+font-family: 'Muli', sans-serif;
+height: 4em;
+}
