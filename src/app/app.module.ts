@@ -11,7 +11,11 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
-const routes:Routes=[{path:'',component:PrincipalComponent}]
+const routes:Routes=[{path:'',component:PrincipalComponent},
+                     {path:'nosotros',component:NosotrosComponent},
+                     {path:'servicio',component:ServiciosComponent},
+                     {path:'instalaciones',component:InstalacionesComponent},
+                     {path:'contacto',component:ContactoComponent}, ]
 
 
 @NgModule({
