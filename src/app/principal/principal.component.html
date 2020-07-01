@@ -1,2 +1,103 @@
 <app-header></app-header>
+<div class="azulinocisa d-flex justify-content-center font-weight-bold text-uppercase align-items-center">
+  <h4 class="font-weight-bold">Inicio</h4>
+ </div>
+<!-- Card Principal -->
+<section class="container-fluid p-0">
+<div class="text-center text-uppercase mt-2 pt-5" style="font-family: 'Muli', sans-serif;">
+        <p  class="subtitulo jumbotron shadow shadow-lg"><span class="font-weight-bold "> El INSTITUTO DEL NOROESTE EN CIENCIAS DE LA SALUD</span>  es una organización constituda por profesionistas sinaloenses con la misión de brindar servicios de Salud innovadores...</p>
+
+        
+</div>
+</section>
+
+<!-- Seccion del carrusel
+ -->
+ <section class="container mt-5 pt-5 d-flex justify-content-center">
+   
+  <ngb-carousel >
+    <ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="{{pelicula.img}}" class="card-img-bottom img-fluid rounded-lg shadow shadow-lg" alt="Random first slide" style="width: 500px;">
+      </div>
+      <div class="carousel-caption  font-weight-bolder text-uppercase "  style="font-family: 'Muli', sans-serif;">
+        <h2 class="titulo">{{pelicula.name}}</h2>
+        <h3 class="titulo">{{pelicula.desc}}</h3>
+        <a class="btn btn-success  mt-3 letrascard rounded-pill" routerLink="{{pelicula.link}}">{{pelicula.boton}}</a>
+
+       
+      </div>
+    </ng-template>
+</ngb-carousel>
+
+
+  
+</section> 
+
+<!-- Cards secundaria sin bordes --> 
+
+
+<section class="container mt-5 pt-5">
+
+  <h5 class="titulo pb-5 text-uppercase text-center" >Tenemos  amplia experiencia en el cuidado de adultos mayores</h5>
+    <div class="card-deck subtitulo" style="font-family: 'Philosopher', sans-serif">
+     <!-- Card 1 -->   
+        <div class="card border-0 ">
+          
+          <div class="card-body ">
+            <p class="card-title subtitulo text-center font-weight-bold">Personal de Salud  Profesional Clasificado</p>
+            <img [src]="personalcard" class="shadow shadow-lg card-img-top img-fluid" alt="...">
+            <p class="card-text letrascard">Somos un grupo de profesionales con experiencia capacitados para dar la mejor atención en el noroeste de Sinaloa</p>
+            
+            <div class="d-flex justify-content-center"> 
+                <button [routerLink]="['/servicio']" class="botoninocisa rounded-pill"> Ver</button>
+              </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="card border-0" >
+            
+            <div class="card-body">
+              <p class="card-title subtitulo text-center font-weight-bold">Instalaciones cómodas y sanitizadas</p>
+              <img [src]="instalacionescard" class="shadow shadow-lg card-img-top img-fluid" alt="...">
+              <p class="card-text letrascard">Conoce nuestras instalaciones de primer nivel y descubre porque nuestros residentes se sienten como en casa</p>
+              
+              <div class="d-flex justify-content-center view overlay zoom"> 
+                <button [routerLink]="['/instalaciones']" class="botoninocisa rounded-pill hoverable"> Ver</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card border-0">
+            <div class="card-body">
+              <p class="card-title subtitulo text-center font-weight-bold">Asesoría personalizada por residente</p>
+              
+            <img [src]="asesorcard" class="shadow shadow-lg card-img-top img-fluid" alt="...">
+              <p class="card-text letrascard">¿Tienes alguna pregunta?, nuestros asesores estarán gustosos de atenderte en nuestros números personales</p>
+             
+              <div class="d-flex justify-content-center"> 
+                <button [routerLink]="['/contacto']" class="botoninocisa rounded-pill"> Ver</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+</section>
+
+<section class="container-fluid mt-5 pt-5 mb-5 mr-4"  style="font-family: 'Philosopher', sans-serif">
+    <div class="text-center">
+        <h4 class="mb-5 titulo">Es momento de devolverles un poco de lo que han hecho por nosotros</h4>
+        <p  class="subtitulo">En INOCISA trabajamos todos los días para que nuestros residentes se sientan como en casa.Nuestra meta es atenderlos con amor y paciencia honrando y agradeciendo su vida</p>
+        <p class="subtitulo font-weight-bold">En INOCISA queremos que  Estes bien</p>
+    </div>
+</section>
+
+
+
+
+
+
 <router-outlet></router-outlet>
+<app-footer></app-footer>

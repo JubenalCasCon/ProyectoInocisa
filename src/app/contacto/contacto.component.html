@@ -1,2 +1,80 @@
 <app-header></app-header>
+<div class="azulinocisa d-flex justify-content-center font-weight-bold text-uppercase align-items-center">
+    <h4 class="font-weight-bold">Contacto</h4>
+</div>
+
+<div class="container pt-2 mt-2 d-flex justify-content-center text-center" style="font-family: 'Philosopher', sans-serif" >
+    
+    <div class="d-block border border-dark" style="width: 350px;">
+      
+        <iframe class="  border border-none h-80 w-80 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9672020787984!2d-109.02665548546574!3d25.804656083617225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba267313f6033f%3A0x6fc9c26bddd61f8e!2sINOCISA%20(instituto%20del%20Noroeste%20en%20Ciencias%20de%20la%20Salud%20A.%20C.)!5e0!3m2!1ses-419!2smx!4v1576542527282!5m2!1ses-419!2smx" 
+           ></iframe>
+            
+          </div>
+   
+</div>
+
+<section class="container mt-2 pt-5 ">
+   
+    <div class="card-deck  ">
+        <div class="card  text-secondary text-center ">
+            
+            
+          <div class="card-body p-0  ">
+            
+          <img [src]="fotocontacto" class="card-img-bottom img-fluid  shadow shadow-lg" alt="..." style="width: 450px;">
+            
+            
+          </div>
+        </div>
+        </div>
+</section>
+ <section class="container pt-3 mt-3">
+    
+     <div class="row d-flex justify-content-center">
+         <div class="col-11 col-md-6">
+             <form  name="contact-form" method="POST" action="enviar2.php" class="rounded-md" style="font-family: 'Philosopher', sans-serif">
+                 <div class="form-group ">
+                     <label for="" class=" col-form-label"> Nombre</label>
+                     <input type="text" placeholder="Nombre" name="nombre" required="required" class="form-control ">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class=" col-form-label">Correo</label>
+                        <input type="email" placeholder="Correo" name="email" required="required" class="form-control ">
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class=" col-form-label" >Teléfono</label>
+                        <input type="number" placeholder="Teléfono" name="telefono" class="form-control ">
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class=" col-form-label">Asunto</label>
+                        <input type="text" placeholder="Asunto" name="asunto" class="form-control ">
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class=" col-form-label">Mensaje</label>
+                        <input type="text" placeholder="Mensaje" name="mensaje" class="form-control" style="height: 100px;">
+
+
+                    </div>
+
+                    <div class="form-group ">
+                        <button class=" botoninocisa rounded-pill" type="submit">Enviar</button>
+                    </div>
+             </form>
+         </div>
+     </div>
+ </section>
+
+
+
 <router-outlet></router-outlet>
+<app-footer></app-footer>

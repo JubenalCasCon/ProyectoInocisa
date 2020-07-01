@@ -10,12 +10,19 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { PruebaComponent } from './prueba/prueba.component'
 
 const routes:Routes=[{path:'',component:PrincipalComponent},
                      {path:'nosotros',component:NosotrosComponent},
                      {path:'servicio',component:ServiciosComponent},
                      {path:'instalaciones',component:InstalacionesComponent},
-                     {path:'contacto',component:ContactoComponent}, ]
+                     {path:'contacto',component:ContactoComponent},
+                     {path:'prueba',component:PruebaComponent}
+                    
+                    
+                    ]
 
 
 @NgModule({
@@ -27,12 +34,15 @@ const routes:Routes=[{path:'',component:PrincipalComponent},
     NosotrosComponent,
     ServiciosComponent,
     InstalacionesComponent,
-    ContactoComponent
+    ContactoComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

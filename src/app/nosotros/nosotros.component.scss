@@ -1,0 +1,30 @@
+$azulincoisa:rgb(0, 158, 226);
+$amarilloinocisa:rgb(255,205,0);
+$naranjainocisa:rgb(248,175,0);
+$verdeinocisa:rgb(165,173,30);
+$verdefinocisa:rgb(131,140,40);
+$grisinocisa: rgb(198,198,198);
+$titulo:4vh;
+$subtitulo:3vh;
+$card:2vh;
+
+
+.azulinocisa
+{
+background: $azulincoisa;
+font-family: 'Muli', sans-serif;
+height: 4em;
+}
+
+
+.subtitulo
+{
+
+font-size: $subtitulo;
+}
+
+.card
+{
+border-style: none;
+
+}

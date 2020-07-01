@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nosotros.component.scss']
 })
 export class NosotrosComponent implements OnInit {
+  seccionnosotros:string="assets/Imagenes/fotografia1.jpg";
+
 
   constructor() { }
 

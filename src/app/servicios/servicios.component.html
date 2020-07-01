@@ -1,2 +1,129 @@
 <app-header></app-header>
+<div class="azulinocisa d-flex justify-content-center font-weight-bold text-uppercase align-items-center">
+    <h4 class="font-weight-bold">Servicios</h4>
+</div>
+
+<section class="container mt-2 pt-5 pb-5 ">
+
+    <div class="card-deck  ">
+        <div class="card  text-secondary text-center ">
+
+
+            <div class="card-body p-0  ">
+
+                <img [src]="fotoservicio" class="card-img-bottom img-fluid  shadow shadow-lg" alt="..."
+                    style="width: 450px;">
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-2 pt-5 pb-5">
+    <p class="text-uppercase font-weight-bold text-center">Nuestros Programas y servicios</p>
+    <p class="text-left">Brindamos servicios de atención de salud y administrativos, orientados a cuidar, preservar y
+        difundir el cuidado de los adultos mayores</p>
+</section>
+<!-- Muestra de botones para servicios -->
+<section class="container  d-flex justify-content-center">
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-11 col-md-6">
+            <form action="" class="rounded-md pt-2 pb-2 " style="font-family: 'Philosopher', sans-serif">
+
+                <div class="form-group d-flex justify-content-center pb-4 pt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center" [@showUp]="mostrarinformacion" (click)="cambiarvalor()">
+                        <a class="border border-dark shadow shadow-lg rounded-lg botoninocisa text-center"> <i class="fa "
+                                [ngClass]="{'fa-chevron-circle-down': !mostrarinformacion,
+                    'fa-chevron-circle-up': mostrarinformacion}">Servicio de terapia Corporal </i>
+
+                            <ul *ngIf="mostrarinformacion" class=" font-weight-bold ">
+                                <li>Alfabiotismo</li>
+                                <li>Fisioterapia</li>
+                                <li>Rehabilitación</li>
+                            </ul>
+
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="form-group d-flex justify-content-center pb-4 pt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center" [@showUp]="mostrarenfermeria"
+                        (click)="cambiarenfermeria()">
+                        <a class="border border-dark shadow shadow-lg rounded-lg botoninocisa text-left"> <i class="fa "
+                                [ngClass]="{'fa-chevron-circle-down': !mostrarenfermeria,
+                    'fa-chevron-circle-up': mostrarenfermeria}">Cuidado enfermero a domicilio </i>
+
+                            <ul *ngIf="mostrarenfermeria" class=" font-weight-bold ">
+                                <li style="list-style: none;">Cuidado enfermero para enfermos crónicos</li>
+                                <li>Servicio de 8,12 y 24 horas</li>
+
+                            </ul>
+
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="form-group d-flex justify-content-center pb-4 pt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center" [@showUp]="mostrarestancia" (click)="cambiarestancia()">
+                        <a class="border border-dark shadow shadow-lg rounded-lg botoninocisa text-left"> <i class="fa "
+                                [ngClass]="{'fa-chevron-circle-down': !mostrarestancia,
+                    'fa-chevron-circle-up': mostrarestancia}">Estancia para adultos Mayores</i>
+
+                            <ul *ngIf="mostrarestancia" class=" font-weight-bold">
+                                <li style="list-style: none;">Servicios de Cuidado enfermero </li>
+                                <li>Estancia Corta</li>
+                                <li>Estancia Permanente</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-center pb-4 pt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center" [@showUp]="mostrarprocedimientos"
+                        (click)="cambiarprocedimientos()">
+                        <a class="border border-dark shadow shadow-lg rounded-lg botoninocisa text-left"> <i class="fa "
+                                [ngClass]="{'fa-chevron-circle-down': !mostrarprocedimientos,
+                    'fa-chevron-circle-up': mostrarprocedimientos}">Procedimientos de Enfermeria</i>
+
+                            <ul *ngIf="mostrarprocedimientos" class=" font-weight-bold">
+                                <li style="list-style: none;">Procedimientos de enfermeria personalizados </li>
+                                <li>En nuestras instalaciones</li>
+                                <li>En el hogar del paciente</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-center pb-4 pt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center" [@showUp]="mostrarcapacitacion"
+                        (click)="cambiarcapacitacion()">
+                        <a class="border border-dark shadow shadow-lg rounded-lg botoninocisa text-left"> <i class="fa "
+                                [ngClass]="{'fa-chevron-circle-down': !mostrarcapacitacion,
+                    'fa-chevron-circle-up': mostrarcapacitacion}">Formacion de recursos Humanos</i>
+
+                            <ul *ngIf="mostrarcapacitacion" class=" font-weight-bold">
+                                <li style="list-style: none;">Capacitación y actualización de RH</li>
+                                <li>Posgrados</li>
+                                <li>Educación continua</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+
+
 <router-outlet></router-outlet>
+<app-footer></app-footer>

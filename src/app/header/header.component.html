@@ -5,17 +5,17 @@
   
       <div class="d-flex justify-content-around align-items-center m-0 pt-3 pb-3" >
         <img class="imagentelefono" [src]="telefono">
-        <nav class="navbar  navbar-dark p-0   navbar-expand-sm d-flex justify-content-end   " style=" font-family: 'Philosopher',sans-serif;" >
+        <nav class="navbar navbar-light bg-light p-0   navbar-expand-sm d-flex justify-content-end   " style=" font-family: 'Philosopher',sans-serif;" >
   
     
-          <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-toggler-left opacidad " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
          
         
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-        <div class="navbar-nav  text-monospace d-flex align-items-center" style="font-family: 'Philosopher', sans-serif;">
+        <div class="navbar-nav  text-monospace d-flex align-items-center elementosmenu" style="font-family: 'Philosopher', sans-serif;">
             <a class="nav-item nav-link active text-dark" href="#">Inicio</a>
             <a class="nav-item nav-link  text-dark" [routerLink]="['/nosotros']">Nosotros</a>
             <a class="nav-item nav-link  text-dark" [routerLink]="['/servicio']">Servicio</a>
@@ -26,9 +26,7 @@
         </nav>
       </div>
   
-      <div class="azulinocisa d-flex justify-content-center font-weight-bold text-uppercase align-items-center">
-        <h4>Inicio</h4>
-       </div>
+      
   </div>
   
   
